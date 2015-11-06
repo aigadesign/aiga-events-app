@@ -1,0 +1,67 @@
+Alaska	9086
+Arizona	9085
+Atlanta	10924
+Austin	7770
+Baltimore	9082
+Birmingham	14716
+Blue Ridge	10473
+Boston	10006
+Central PA	8462
+Charlotte	21019
+Chattanooga	13754
+Chicago	9087
+Cincinnati	13294
+Cleveland	9170
+Colorado	6886
+Connecticut	9726
+Dallas-Ft. Worth	8363
+Detroit	14666
+Hampton Roads	10925
+Honolulu	7974
+Houston	8368
+Idaho	18181
+Indianapolis	21198
+Iowa	8369
+Jacksonville	9798
+Kansas City	9171
+Knoxville	9560
+Las Vegas	17295
+Los Angeles	10194
+Maine	17998
+Memphis	12355
+Metro North	19723
+Miami	8456
+Minnesota	6885
+Nashville	9081
+Nebraska	8367
+New Mexico	12465
+New Orleans	8366
+New York	8402
+Oklahoma	10922
+Orange County	8362
+Orlando	15755
+Philadelphia	8371
+Pittsburgh	7503
+Portland	8361
+Raleigh	21191
+Reno/Tahoe	12940
+Rhode Island	10317
+Richmond	9725
+Salt Lake City	8364
+San Antonio	10472
+San Diego	9459
+San Francisco	10923
+Santa Barbara	17999
+Seattle	8370
+South Carolina	21172
+South Dakota	8365
+St. Louis	9084
+Tampa Bay	18557
+Toledo	14667
+Triad NC	16986
+Upstate New York	9083
+Vermont	10474
+Washington, DC	9555
+West Michigan	12939
+Wichita	13295
+Wisconsin	8372

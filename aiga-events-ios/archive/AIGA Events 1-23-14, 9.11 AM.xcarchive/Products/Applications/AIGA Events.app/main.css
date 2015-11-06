@@ -1,0 +1,15 @@
+body{
+
+    padding-left:20px;
+    padding-right:20px;
+    font-size:15pt;
+    color:#808080;
+    font-family: Georgia, Times, "Times New Roman", serif;
+
+    font-style: italic;
+    background-color: rgb(239,239,239);
+}
+a, a:visited{
+    color:#d94e4d;
+}
+

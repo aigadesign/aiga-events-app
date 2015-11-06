@@ -1,0 +1,108 @@
+2013-11-20 16:10:13.171 AIGA Events[8599:a0b] (
+    "<null>",
+        {
+        "background_color" = eceddf;
+        "box_background_color" = ffffff;
+        "box_border_color" = dedede;
+        "box_header_background_color" = fafafa;
+        "box_header_text_color" = 404040;
+        "box_text_color" = 666666;
+        capacity = 23;
+        category = "conferences,meetings";
+        created = "2013-11-17 10:32:16";
+        description = "<P><STRONG>\U201cDammit Jim, I\U2019m a designer, not a copywriter!\U201d</STRONG><BR> On some projects, designers sometimes find themselves being asked to take the place of a professional copywriter. Join <A HREF=\"http://rebekahcancino.com/\">Rebekah Cancino</A>, Communications Director at Forty and co-organizer of the Phoenix Content Strategy Meetup, as she shares insights and pointers that will help you work more closely with your client in developing better practices for organizing content and writing effective copy \U2013\U00a0whether you end up exercising your own literary skills or handing off to a content specialist.<BR> <BR> <STRONG>\U00a1Luncha Learne!</STRONG><BR> This lunch presentation series lets you break away from your desk and listen to local design leaders present original perspectives and best practices that will inspire you and your workplace.</P>
+\n<P><STRONG>Price (includes lunch)</STRONG><BR> $15 - AIGA members<BR> $20 - Ad2Phoenix, AAF, and AMA members<BR> $25 - Non-members</P>
+\n<P>This workshop is limited to 20 people. In order to accommodate lunch orders, tickets cannot be sold at the door. Registration will close on Tuesday, December 3 at 10 pm.</P>";
+        distance = "0.00M";
+        "end_date" = "2013-12-05 13:15:00";
+        id = 9361567701;
+        "link_color" = E4853D;
+        locale = "en_US";
+        logo = "http://ebmedia.eventbrite.com/s3-build/images/3574799/3043751151/1/logo.jpg";
+        "logo_ssl" = "https://ebmedia.eventbrite.com/s3-build/images/3574799/3043751151/1/logo.jpg";
+        modified = "2013-11-19 19:48:24";
+        "num_attendee_rows" = 14;
+        organizer =         {
+            description = "AIGA, the professional association for design, stimulates thinking about design, demonstrates the value of design and empowers the success of designers at each stage of their careers. AIGA\U2019s mission is to advance designing as a professional craft, strategic tool and vital cultural force. Founded in 1914, AIGA remains the oldest and largest professional membership organization for design, and is a nonprofit, 501(c)(3) educational institution.";
+            id = 367181403;
+            "long_description" = "AIGA, the professional association for design, stimulates thinking about design, demonstrates the value of design and empowers the success of designers at each stage of their careers. AIGAs mission is to advance designing as a professional craft, strategic tool and vital cultural force. Founded in 1914, AIGA remains the oldest and largest professional membership organization for design, and is a nonprofit, 501(c)(3) educational institution.";
+            name = "AIGA Arizona";
+            url = "http://aigaarizona.eventbrite.com";
+        };
+        privacy = Public;
+        repeats = no;
+        "start_date" = "2013-12-05 11:45:00";
+        status = Live;
+        tags = "";
+        "text_color" = e4853d;
+        tickets =         (
+                        {
+                ticket =                 {
+                    currency = USD;
+                    description = "Price includes lunch.";
+                    "display_price" = "15.00";
+                    "end_date" = "2013-12-03 22:00:00";
+                    id = 21931743;
+                    max = 5;
+                    min = 1;
+                    name = "AIGA Member";
+                    price = "16.37";
+                    "start_date" = "2013-11-17 11:40:00";
+                    type = 0;
+                    visible = true;
+                };
+            },
+                        {
+                ticket =                 {
+                    currency = USD;
+                    description = "Price includes lunch.";
+                    "display_price" = "20.00";
+                    "end_date" = "2013-12-03 22:00:00";
+                    id = 21931745;
+                    max = 5;
+                    min = 1;
+                    name = "Ad2Phoenix, AMA, and AAF Members";
+                    price = "21.49";
+                    "start_date" = "2013-11-17 11:40:00";
+                    type = 0;
+                    visible = true;
+                };
+            },
+                        {
+                ticket =                 {
+                    currency = USD;
+                    description = "Price includes lunch.";
+                    "display_price" = "25.00";
+                    "end_date" = "2013-12-03 22:00:00";
+                    id = 21931747;
+                    max = 5;
+                    min = 1;
+                    name = "Non-members";
+                    price = "26.62";
+                    "start_date" = "2013-11-17 11:40:00";
+                    type = 0;
+                    visible = true;
+                };
+            }
+        );
+        timezone = "America/Phoenix";
+        "timezone_offset" = "GMT-0700";
+        title = "\U00a1Luncha Learne! \U201cDammit Jim, I\U2019m a designer, not a copywriter!\U201d";
+        "title_text_color" = "";
+        url = "http://www.eventbrite.com/e/luncha-learne-dammit-jim-im-a-designer-not-a-copywriter-tickets-9361567701?aff=SRCH";
+        venue =         {
+            "Lat-Long" = "33.42472 / -111.940281";
+            address = "520 South Mill Avenue";
+            "address_2" = "Suite 302";
+            city = Tempe;
+            country = "United States";
+            "country_code" = US;
+            id = 4740651;
+            latitude = "33.42472";
+            longitude = "-111.940281";
+            name = Forty;
+            "postal_code" = 85281;
+            region = AZ;
+        };
+    }
+)

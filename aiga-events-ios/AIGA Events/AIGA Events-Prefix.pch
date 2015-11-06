@@ -1,0 +1,29 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+#endif
+
+#import "AIGAEventsDefines.h"
+
+#define MR_SHORTHAND
+#import "CoreData+MagicalRecord.h"
+
+#ifdef DEBUG
+#define AIGALog(...) NSLog(@"%s (line %d) %@", __PRETTY_FUNCTION__, __LINE__, [NSString stringWithFormat:__VA_ARGS__]);
+#else
+#define AIGALog(...)
+#endif

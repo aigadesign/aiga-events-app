@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+        <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+                
+                <link rel="stylesheet" href="main.css">
+                    <script src="jquery.min.js"></script>
+                    </head>
+<body>
+    <font face='Georgia' size='3'>
+        <div id='content' style="color:red">
+            {{body}}
+        </div>
+        <br>
+        <br>
+    </font>
+</body>
+<script>
+    
+    function getAllElementsWithAttribute(attribute)
+    {
+        var matchingElements = [];
+        var allElements = document.getElementsByTagName('*');
+        for (var i = 0; i < allElements.length; i++)
+        {
+            if (allElements[i].getAttribute(attribute))
+            {
+                // Element exists with attribute. Add to array.
+                matchingElements.push(allElements[i]);
+            }
+        }
+        return matchingElements;
+    }
+
+$("document").ready(function(){
+                    $(getAllElementsWithAttribute("style")).each(function(){
+                                                                 $(this).removeAttr('style');
+                                                                 
+                                                                 })
+                    $(getAllElementsWithAttribute("width")).each(function(){
+                                                                 // set width to fit
+                                                                 $(this).attr("height","100%").attr("width","100%");
+                                                                 })
+                    
+                    });
+                    
+                    /*
+                     or to remove elements with a width attribute, instead call:
+                     $("document").ready(function(){
+                     $(getAllElementsWithAttribute("style")).each(function(){
+                     $(this).removeAttr('style');
+                     
+                     })
+                     
+                     $("img[width]").each(function(){
+                     $(this).remove();
+                     });
+                     });
+                     */
+
+    </script>
+
+</html>
+

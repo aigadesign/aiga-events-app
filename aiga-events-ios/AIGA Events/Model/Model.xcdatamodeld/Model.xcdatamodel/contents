@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13F34" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="AIGChapter" representedClassName="AIGChapter" syncable="YES">
+        <attribute name="city" attributeType="String" syncable="YES"/>
+        <attribute name="contactName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eTouchesID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventBriteOrg" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="selected" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="events" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AIGEvent" inverseName="chapter" inverseEntity="AIGEvent" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AIGUser" inverseName="chapters" inverseEntity="AIGUser" syncable="YES"/>
+    </entity>
+    <entity name="AIGEvent" representedClassName="AIGEvent" syncable="YES">
+        <attribute name="abbrevDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="eTouchesID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="eventBriteID" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="eventDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventTitle" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="mainImageData" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="registerURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="thumbnailData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="thumbnailImage" optional="YES" transient="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="timestamp" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="venueName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chapter" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AIGChapter" inverseName="events" inverseEntity="AIGChapter" syncable="YES"/>
+        <relationship name="tickets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AIGEventTicket" inverseName="event" inverseEntity="AIGEventTicket" syncable="YES"/>
+    </entity>
+    <entity name="AIGEventTicket" representedClassName="AIGEventTicket" syncable="YES">
+        <attribute name="cost" attributeType="Decimal" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="event" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="AIGEvent" inverseName="tickets" inverseEntity="AIGEvent" syncable="YES"/>
+    </entity>
+    <entity name="AIGUser" representedClassName="AIGUser" syncable="YES">
+        <attribute name="firstName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="chapters" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AIGChapter" inverseName="user" inverseEntity="AIGChapter" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AIGChapter" positionX="0" positionY="0" width="128" height="180"/>
+        <element name="AIGEvent" positionX="0" positionY="0" width="128" height="315"/>
+        <element name="AIGEventTicket" positionX="0" positionY="0" width="128" height="90"/>
+        <element name="AIGUser" positionX="0" positionY="0" width="128" height="90"/>
+    </elements>
+</model>
