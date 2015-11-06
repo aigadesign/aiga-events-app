@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aiga="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/action_refresh"
+        aiga:showAsAction="ifRoom"
+        android:icon="@drawable/refresh"
+        android:orderInCategory="1"
+        android:title="@string/refresh"/>
+    <item
+        android:id="@+id/action_done"
+        aiga:showAsAction="always|withText"
+        android:icon="@null"
+        android:orderInCategory="2"
+        android:title="@string/done"
+        android:visible="false"/>
+
+</menu>

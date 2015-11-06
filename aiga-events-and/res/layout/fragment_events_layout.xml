@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.aiga.events.android.views.NoScrollSwipeRefreshLayout
+        android:id="@+id/error_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:visibility="gone">
+
+        <include layout="@layout/message_error_layout" />
+    </com.aiga.events.android.views.NoScrollSwipeRefreshLayout>
+
+    <com.aiga.events.android.views.NoScrollSwipeRefreshLayout
+        android:id="@+id/empty_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <include layout="@layout/message_no_events_chapter_layout" />
+    </com.aiga.events.android.views.NoScrollSwipeRefreshLayout>
+
+    <com.aiga.events.android.views.NoScrollSwipeRefreshLayout
+        android:id="@+id/swipable_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/list_viewpager_events"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="2dp"
+            android:scrollbars="none" >
+        </ListView>
+    </com.aiga.events.android.views.NoScrollSwipeRefreshLayout>
+
+</FrameLayout>

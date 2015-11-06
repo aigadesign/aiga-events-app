@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/subheader_text"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/aiga_white"
+        android:paddingLeft="35dp"
+        android:textColor="@color/aiga_grey_3"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        style="@style/Theme.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_xlarge_size"
+        android:background="@drawable/light_grey_selector"
+        android:padding="@dimen/default_padding" >
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="25dp"
+            android:textColor="@color/aiga_grey_3" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/default_image_size"
+            android:layout_height="@dimen/default_image_size"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/events_thumbnail_image_desc"
+            android:src="@drawable/check"
+            android:visibility="invisible" >
+        </ImageView>
+    </RelativeLayout>
+
+</LinearLayout>

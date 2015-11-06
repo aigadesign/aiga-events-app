@@ -1,0 +1,41 @@
+UberHttp (Android)
+==================
+
+Utility project for providing common HTTP services for Android projects.
+
+
+Requirements:
+-----------------
+
+The project requires the following permissions to be added to the manifest for the application:
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+Gradle Build System
+-------------------
+
+Early support for Gradle is available. The output of the Gradle build should not be used for client
+projects however.
+
+To build the debug and release AAR files run this command:
+
+    gradle clean assemble
+
+The AAR files can be found in `build/libs`.
+
+To publish the release artifacts to the local Maven repository run this command:
+
+    gradle publishToMavenLocal
+
+To generate a release library ZIP (similar to the output of the Ant generate_library target run this command:
+
+    gradle clean generateReleaseLibrary
+
+The release library ZIP can be found in `build/distributions`.
+
+To run the test against all connected devices run this command:
+
+    gradle clean connectedCheck
+
+For more information on the available Gradle tasks see the [Gradle Plugin User Guide](http://tools.android.com/tech-docs/new-build-system/user-guide).

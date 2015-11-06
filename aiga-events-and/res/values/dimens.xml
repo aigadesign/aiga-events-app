@@ -1,0 +1,34 @@
+<resources>
+
+    <!-- Fonts -->
+    <dimen name="small_text_size">12sp</dimen>
+    <dimen name="medium_text_size">16sp</dimen>
+    <dimen name="large_text_size">20sp</dimen>
+
+    <!-- Calendar elements -->
+    <dimen name="calendar_list_item_height">84dp</dimen>
+    <dimen name="calendar_event_image_size">48dp</dimen>
+    <dimen name="calendar_list_item_padding">12dp</dimen>
+    <dimen name="calendar_default_divider_height">1dp</dimen>
+
+    <!-- Default/generic values -->
+    <dimen name="default_tap_target">56dp</dimen>
+    <dimen name="default_image_size">24dp</dimen>
+	<dimen name="default_2x_padding">16dp</dimen>
+	<dimen name="default_1_5x_padding">12dp</dimen>
+	<dimen name="default_padding">8dp</dimen>
+	<dimen name="default_half_padding">4dp</dimen>
+	<dimen name="default_xlarge_size">48dp</dimen>
+
+    <!-- Title and message elements -->
+    <dimen name="message_default_padding">24dp</dimen>
+    <dimen name="message_default_half_padding">12dp</dimen>
+    <dimen name="message_logo_default_size">48dp</dimen>
+
+    <!-- View pager elements -->
+    <dimen name="pager_default_padding">8dp</dimen>
+
+    <!-- Event details -->
+	<dimen name="details_icon_size">20dp</dimen>
+
+</resources>

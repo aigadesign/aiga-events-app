@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/calendar_no_events_found"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_default_divider_height"
+        android:background="@color/aiga_grey_1" />
+
+    <View
+        android:id="@+id/no_events_image"
+        android:layout_width="@dimen/message_logo_default_size"
+        android:layout_height="@dimen/message_logo_default_size"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/message_default_padding"
+        android:layout_marginTop="@dimen/message_default_padding"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/no_events_message"
+        style="@style/DefaultOverviewMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/no_events_image"
+        android:layout_marginRight="@dimen/message_default_padding"
+        android:layout_toRightOf="@id/no_events_image"
+        android:paddingLeft="@dimen/message_default_half_padding"
+        android:text="@string/no_events_cal_date" />
+
+</RelativeLayout>

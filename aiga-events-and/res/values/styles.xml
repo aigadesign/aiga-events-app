@@ -1,0 +1,62 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionBarStyle">@style/AIGAActionBar</item>
+        <item name="actionBarStyle">@style/AIGAActionBar</item>
+        <item name="android:actionBarItemBackground">@drawable/light_grey_selector</item>
+        <item name="android:cacheColorHint">@color/aiga_white</item>
+        <item name="android:windowBackground">@color/aiga_white</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="AIGAActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">@color/aiga_grey_1</item>
+        <!-- Setting empty display options to prevent logo and App Title from flickering on launch -->
+        <item name="android:displayOptions"></item>
+        <item name="displayOptions"></item>
+    </style>
+
+    <!-- Text styles -->
+    <style name="ListItemSubtitle">
+        <item name="android:textColor">@color/aiga_black_1</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="GetStartedMessage">
+        <item name="android:textColor">@color/aiga_blue</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <style name="DefaultOverviewMessage">
+        <item name="android:textColor">@color/aiga_grey_3</item>
+        <item name="android:textSize">@dimen/large_text_size</item>
+    </style>
+
+    <style name="AboutMessage">
+        <item name="android:textColor">@color/aiga_grey_3</item>
+        <item name="android:textSize">@dimen/medium_text_size</item>
+    </style>
+
+    <style name="ListItemTitle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textColor">@color/aiga_black_3</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>

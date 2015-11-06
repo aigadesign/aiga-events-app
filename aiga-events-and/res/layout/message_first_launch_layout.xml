@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_first_launch"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/first_launch_overview"
+            style="@style/DefaultOverviewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/message_default_padding"
+            android:layout_marginRight="@dimen/message_default_padding"
+            android:gravity="center_horizontal"
+            android:text="@string/launch_message" />
+
+        <LinearLayout
+            android:id="@+id/first_launch_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_tap_target"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/first_launch_overview"
+            android:layout_marginRight="@dimen/message_default_padding"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                style="@style/GetStartedMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/loading" />
+
+            <ProgressBar
+                android:id="@+id/first_launch_progress"
+                android:layout_width="@dimen/default_image_size"
+                android:layout_height="@dimen/default_image_size"
+                android:layout_marginLeft="@dimen/default_half_padding"
+                android:gravity="center_vertical"
+                android:indeterminate="true" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/message_first_launch_button"
+            style="@style/GetStartedMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/default_tap_target"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/first_launch_overview"
+            android:background="@drawable/link_selector_light"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/message_default_padding"
+            android:paddingRight="@dimen/message_default_padding"
+            android:text="@string/get_started"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@null"
+            android:paddingBottom="@dimen/default_2x_padding"
+            android:paddingLeft="@dimen/default_2x_padding"
+            android:src="@drawable/dd_powered" />
+    </RelativeLayout>
+
+</FrameLayout>

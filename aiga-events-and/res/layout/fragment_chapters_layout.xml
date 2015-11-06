@@ -1,0 +1,22 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.aiga.events.android.views.NoScrollSwipeRefreshLayout
+        android:id="@+id/swipable_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/chapter_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="multipleChoice"
+            android:divider="#e2e3e4"
+            android:dividerHeight="2dp"
+            android:fastScrollAlwaysVisible="true"
+            android:fastScrollEnabled="true"
+            android:groupIndicator="@null" />
+    </com.aiga.events.android.views.NoScrollSwipeRefreshLayout>
+
+</FrameLayout>

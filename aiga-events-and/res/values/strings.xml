@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">AIGA Events</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="events_thumbnail_image_desc">Events Thumbnail image</string>
+    <string name="calendar_title">Calendar</string>
+    <string name="details_text_description_title">LOCATION</string>
+    <string name="details_text_datetime_title">DATE &amp; TIME</string>
+    <string name="details_get_tickets_link_text">GET TICKETS</string>
+    <string name="details_add_action">ADD</string>
+    <string name="details_map_action">MAP IT</string>
+    <string name="no_events_cal_date">There are no events for the selected date.</string>
+    <string name="no_events_cal_month">There are no events for this month.</string>
+    <string name="no_events_found_chapter">There are no events for this chapter.</string>
+    <string name="launch_message">To display events, please select one or more AIGA chapters.</string>
+    <string name="error_message">Something went wrong. Please try again later.</string>
+    <string name="calendar_error_message">Some events may be missing. Please try again later.</string>
+    <string name="get_started">GET STARTED</string>
+    <string name="retry">RETRY</string>
+    <string name="refresh">refresh</string>
+    <string name="error_adding_to_calendar">Sorry, we could not add this event to your calendar</string>
+    <string name="loading">Please wait a moment</string>
+    <string name="pricing_not_available">PRICING NOT AVAILABLE</string>
+    <string name="done">DONE</string>
+	<string name="not_available">Please contact the chapter for more information.</string>
+    <string name="no_venue">(venue not available)</string>
+    
+    <!-- "About" fragment -->
+    <string name="about_overall_title">GENERAL INFORMATION</string>
+    <string name="about_overall_desc">This application was created for the American Institute of Graphic Arts by Deloitte Digital:</string>
+    <string name="about_dd_url">http://www.deloittedigital.com</string>
+    <string name="about_libraries_title">LIBRARIES</string>
+    <string name="about_libraries_desc">This application includes portions of the following obtained under the Apache License 2.0:</string>
+    <string name="about_library_name_supportv4">Android Support Package v7</string>
+    <string name="about_library_name_square">Android Times Square</string>
+    <string name="about_library_url_square">https://github.com/square/android-times-square/tree/master/library</string>
+    <string name="about_licenses_apache_title">APACHE LICENSE</string>
+    <string name="about_licenses_apache_desc1">Version 2.0, January 2004</string>
+	<string name="about_licenses_apache_url">http://www.apache.org/licenses/LICENSE-2.0</string>
+
+    <!-- Action Bar TITLES -->
+    <string name="action_bar_title_events">EVENTS</string>
+    <string name="action_bar_title_chapters">CHAPTERS</string>
+    <string name="action_bar_title_details">DETAILS</string>
+    <string name="action_bar_title_calendar">CALENDAR</string>
+    <string name="action_bar_title_about">ABOUT</string>
+
+</resources>

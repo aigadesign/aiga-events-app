@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/calendar_list_item_height" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/light_grey_selector"
+        android:orientation="horizontal"
+        android:padding="@dimen/calendar_list_item_padding" >
+
+        <FrameLayout
+            android:id="@+id/image_layout"
+            android:layout_width="@dimen/calendar_event_image_size"
+            android:layout_height="@dimen/calendar_event_image_size"
+            android:layout_marginRight="@dimen/default_1_5x_padding"
+            android:layout_marginTop="@dimen/default_padding" >
+
+            <ImageView
+                android:id="@+id/calendar_event_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:contentDescription="@null" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/calendar_event_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_toRightOf="@id/image_layout" >
+
+            <TextView
+                android:id="@+id/calendar_event_title"
+                style="@style/ListItemTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/calendar_event_subtitle"
+                style="@style/ListItemSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Divider between list items -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_default_divider_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/aiga_white" />
+
+</RelativeLayout>

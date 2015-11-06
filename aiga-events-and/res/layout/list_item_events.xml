@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/light_grey_selector"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_1_5x_padding" >
+
+        <FrameLayout
+            android:id="@+id/image_layout"
+            android:layout_width="@dimen/default_xlarge_size"
+            android:layout_height="@dimen/default_xlarge_size"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/default_1_5x_padding"
+            android:layout_marginTop="@dimen/default_padding" >
+
+            <ImageView
+                android:id="@+id/thumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/ListItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/image_layout" />
+
+        <TextView
+            android:id="@+id/calendar_date"
+            style="@style/ListItemSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="@dimen/default_half_padding"
+            android:layout_marginRight="@dimen/default_padding"
+            android:layout_toRightOf="@id/image_layout"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/location_text"
+            style="@style/ListItemSubtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="@dimen/default_half_padding"
+            android:layout_toRightOf="@id/calendar_date" />
+
+        <TextView
+            android:id="@+id/location_description_text"
+            style="@android:style/TextAppearance.Small"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/calendar_date"
+            android:layout_below="@id/location_text"
+            android:layout_marginTop="@dimen/default_half_padding"
+            android:layout_toRightOf="@id/image_layout"
+            android:ellipsize="end"
+            android:textColor="@color/aiga_grey_3"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <!-- Divider between list items -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/calendar_default_divider_height"
+        android:layout_alignParentBottom="true"
+        android:background="@color/aiga_white" />
+
+</RelativeLayout>

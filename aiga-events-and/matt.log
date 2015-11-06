@@ -1,0 +1,260 @@
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+     [echo] proguard.config is ${proguard.config}
+
+-pre-build:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at /Library/Android/android-sdks
+
+-setup:
+     [echo] Project Name: AIGA Events
+  [gettype] Project Type: Application
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for AIGA Events...
+[gettarget] Project Target:   Android 4.4.2
+[gettarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for AIGA Events...
+[dependency] Library dependencies:
+[dependency] 
+[dependency] ------------------
+[dependency] Ordered libraries:
+[dependency] 
+[dependency] ------------------
+     [echo] ----------
+     [echo] Building Libraries with 'release'...
+
+nodeps:
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+     [echo] proguard.config is ${proguard.config}
+
+-pre-build:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at /Library/Android/android-sdks
+
+-setup:
+     [echo] Project Name: android-times-square
+  [gettype] Project Type: Android Library
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for android-times-square...
+[gettarget] Project Target:   Android 4.2.2
+[gettarget] API level:        17
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for android-times-square...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+
+-code-gen:
+[mergemanifest] No changes in the AndroidManifest files.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+     [echo] Creating library output jar file...
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+     [echo] Library project: do not convert bytecode...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/android-times-square/res
+   [crunch] To destination dir: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/android-times-square/bin/res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [echo] Library project: do not package resources...
+
+-package:
+     [echo] Library project: do not package apk...
+
+-post-package:
+
+-release-prompt-for-password:
+
+-release-nosign:
+     [echo] 
+[propertyfile] Updating property file: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/android-times-square/bin/build.prop
+[propertyfile] Updating property file: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/android-times-square/bin/build.prop
+[propertyfile] Updating property file: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/android-times-square/bin/build.prop
+[propertyfile] Updating property file: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/android-times-square/bin/build.prop
+
+-release-sign:
+
+-post-build:
+
+release:
+
+nodeps:
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+     [echo] proguard.config is ${proguard.config}
+
+-pre-build:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at /Library/Android/android-sdks
+
+-setup:
+     [echo] Project Name: UberHttp
+  [gettype] Project Type: Android Library
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for UberHttp...
+[gettarget] Project Target:   Android 4.4.2
+[gettarget] API level:        19
+     [echo] ----------
+     [echo] Creating output directories if needed...
+     [echo] ----------
+     [echo] Resolving Dependencies for UberHttp...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+
+-code-gen:
+[mergemanifest] No changes in the AndroidManifest files.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] No changed resources. R.java and Manifest.java untouched.
+     [echo] ----------
+     [echo] Handling BuildConfig class...
+[buildconfig] No need to generate new BuildConfig.
+
+-pre-compile:
+
+-compile:
+     [echo] Creating library output jar file...
+
+-post-compile:
+
+-obfuscate:
+
+-dex:
+     [echo] Library project: do not convert bytecode...
+
+-crunch:
+   [crunch] Crunching PNG Files in source dir: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/UberHttp/res
+   [crunch] To destination dir: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/UberHttp/bin/res
+   [crunch] Crunched 0 PNG files to update cache
+
+-package-resources:
+     [echo] Library project: do not package resources...
+
+-package:
+     [echo] Library project: do not package apk...
+
+-post-package:
+
+-release-prompt-for-password:
+
+-release-nosign:
+     [echo] 
+[propertyfile] Updating property file: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/UberHttp/bin/build.prop
+[propertyfile] Updating property file: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/UberHttp/bin/build.prop
+[propertyfile] Updating property file: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/UberHttp/bin/build.prop
+[propertyfile] Updating property file: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/UberHttp/bin/build.prop
+
+-release-sign:
+
+-post-build:
+
+release:
+
+nodeps:
+
+-set-mode-check:
+
+-set-release-mode:
+
+-release-obfuscation-check:
+     [echo] proguard.config is ${proguard.config}
+
+-pre-build:
+
+-check-env:
+ [checkenv] Android SDK Tools Revision 22.6.2
+ [checkenv] Installed at /Library/Android/android-sdks
+
+-setup:
+     [echo] Project Name: appcompat
+  [gettype] Project Type: Android Library
+
+-build-setup:
+[getbuildtools] Using latest Build Tools: 19.0.3
+     [echo] Resolving Build Target for appcompat...
+[gettarget] Project Target:   Android 4.1.2
+[gettarget] API level:        16
+     [echo] ----------
+     [echo] Creating output directories if needed...
+    [mkdir] Created dir: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/appcompat/bin/rsObj
+    [mkdir] Created dir: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/appcompat/bin/rsLibs
+     [echo] ----------
+     [echo] Resolving Dependencies for appcompat...
+[dependency] Library dependencies:
+[dependency] No Libraries
+[dependency] 
+[dependency] ------------------
+
+-code-gen:
+[mergemanifest] No changes in the AndroidManifest files.
+     [echo] Handling aidl files...
+     [aidl] No AIDL files to compile.
+     [echo] ----------
+     [echo] Handling RenderScript files...
+     [echo] ----------
+     [echo] Handling Resources...
+     [aapt] Generating resource IDs...
+     [aapt] invalid resource directory name: /Users/jstoecker/Documents/git/aiga-events-android/library-projects/appcompat/bin/res/crunch
+
+BUILD FAILED
+/Library/Android/android-sdks/tools/ant/build.xml:601: The following error occurred while executing this line:
+/Library/Android/android-sdks/tools/ant/build.xml:653: The following error occurred while executing this line:
+/Library/Android/android-sdks/tools/ant/build.xml:698: null returned: 1
+
+Total time: 1 second

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/message_default_padding"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/message_default_padding"
+        android:paddingRight="@dimen/message_default_padding" >
+
+        <View
+            android:layout_width="@dimen/message_logo_default_size"
+            android:layout_height="@dimen/message_logo_default_size"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/logo" />
+
+        <TextView
+            style="@style/DefaultOverviewMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"
+            android:paddingLeft="@dimen/message_default_half_padding"
+            android:text="@string/no_events_found_chapter" />
+    </LinearLayout>
+
+</ScrollView>

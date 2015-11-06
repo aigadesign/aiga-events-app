@@ -1,0 +1,23 @@
+# Android generated files
+gen
+local.properties
+
+# Mac OS X Files
+.DS_Store
+
+# Source attachments
+*.jar.properties
+
+# Eclipse generated files
+bin
+.settings
+.metadata
+.class
+
+# Build files
+doc/
+*~
+
+# Gradle generated files
+/build/
+.gradle/

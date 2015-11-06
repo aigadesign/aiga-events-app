@@ -1,0 +1,21 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:actionBarStyle">@style/AIGAActionBar</item>
+        <item name="actionBarStyle">@style/AIGAActionBar</item>
+        <item name="android:actionBarItemBackground">@drawable/light_grey_selector</item>
+        <item name="android:cacheColorHint">@color/aiga_white</item>
+        <item name="android:windowBackground">@color/aiga_white</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+</resources>
